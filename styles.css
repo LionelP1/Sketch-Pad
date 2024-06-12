@@ -48,16 +48,13 @@ header a {
 
 
 #grid {
+    display:grid;
     width: 400px;
     height: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    border:1px solid black;
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin:20px;
 }
 
 .grid-box {
-    width: 4px;
-    height: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
