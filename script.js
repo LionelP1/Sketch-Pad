@@ -21,7 +21,7 @@ const sizeValue = document.querySelector("#sizeValue");
 clearButton.addEventListener("click", () => backgroundColorChange(backgroundColor));
 eraserButton.addEventListener("click", () => colorChange(backgroundColor));
 colorPicker.addEventListener("input", (e) => {colorChange(e.target.value)});
-backgroundPicker.addEventListener("input", (e) => {backgroundColorChange(e.target.value)});
+backgroundPicker.addEventListener("change", (e) => {backgroundColorChange(e.target.value)});
 sizeSlider.addEventListener("mousemove", (e) => {changeSliderText(e.target.value)});
 sizeSlider.addEventListener("change", (e) => {gridSizeChange(e.target.value)});
 

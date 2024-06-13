@@ -4,10 +4,45 @@
     box-sizing: border-box;
 }
 
-html, body {
+body {
     background-color: #f9f9f9cb;
     height: 100%;
 }
+
+.main{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding:10px;
+}
+
+.controls{
+    display: flex;
+    flex-direction:column;
+    border:1px solid black;
+    justify-content: space-around;
+    height:400px;
+
+
+
+}
+
+.control{
+    border:1px solid black;
+    border-radius:5px;
+    width:250px;
+    height:50px;
+    margin: 0 10px;
+}
+
+#grid {
+    display:grid;
+    width: 80vh;
+    height: 80vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin:20px;
+}
+
 
 header{
     display: flex;
@@ -45,15 +80,6 @@ header a {
     margin-right: 15px;
 }
 
-
-
-#grid {
-    display:grid;
-    width: 400px;
-    height: 400px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin:20px;
-}
 
 .grid-box {
     background-color: rgb(255, 255, 255);

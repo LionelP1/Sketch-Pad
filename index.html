@@ -22,13 +22,23 @@
     </header>
 
     <div class="main">
+        <div class = "controls">
+            <div id ="modeDiv" class="control">
+                <input type="color" id="colorPicker">
+                <button id = "drawingButton">Drawing</button>
+                <button id = "eraserButton">Eraser</button>
+            </div>
+            <div id="backgroundDiv" class="control">
+                <input type="color" id="backgroundPicker" value="#ffffff">
+                <span id="backgroundText">Background</span>
+            </div>
+            <div id="silderDiv" class="control">
+                <div id="sizeValue" class="size-value">32 x 32</div>
+                <input id="sizeSlider" type="range" value="32" min="1" max="100" />
+            </div>
+            <button id = "clearButton" class="control">Clear</button>
+        </div>
         <div id = "grid"></div>
-        <button id = "clearButton">Clear</button>
-        <button id = "eraserButton">Eraser</button>
-        <input type="color" id="colorPicker">
-        <input type="color" id="backgroundPicker" value="#ffffff">
-        <div id="sizeValue" class="size-value">32 x 32</div>
-        <input id="sizeSlider" type="range" value="32" min="1" max="80" />
     </div>
 
     <script src = "script.js"></script>
