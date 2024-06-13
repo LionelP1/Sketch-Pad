@@ -8,6 +8,7 @@
 body {
     background-color: #f9f9f9cb;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main{
@@ -20,7 +21,6 @@ body {
 .controls{
     display: flex;
     flex-direction:column;
-    border:1px solid black;
     justify-content: space-around;
     height:400px;
 
@@ -29,7 +29,7 @@ body {
 }
 
 .control{
-    border:1px solid black;
+    border: 1px solid black;
     border-radius:5px;
     width:250px;
     height:70px;
@@ -88,17 +88,23 @@ button {
     border: 1px solid black;
     border-radius: 5px;
     margin:5px;
+    background-color: #ffffff;
 }
 
-input[type='color'] {
-    -webkit-appearance: none;
-    width: 40px;
-    height: 40px;
-    border: none;
-  }
+
+#clearButton{
+    font-size: medium;
+}
+
+#drawingButton{
+    background-color:#5ab8ff;
+;;
+}
   
 
 input[type="color"] {
+    width: 40px;
+    height: 40px;
     border:none;
     background: none;
     margin-right:10px;
@@ -113,12 +119,8 @@ input[type='color']::-webkit-color-swatch {
     border: none;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
-button.active {
-    background-color: black;
-    color: white;
 }
+  
 
 #modeDiv{
     display: flex;
@@ -149,12 +151,13 @@ button.active {
 
 #sizeSlider {
     -webkit-appearance: none;
-    width: 150px;
+    width: 200px;
     height: 12px;
     background: #ddd;
     outline: none;
     opacity: 0.8;
     border:1px solid black;
+    border-radius: 40px;
 }
 
 #sizeSlider::-webkit-slider-thumb {
