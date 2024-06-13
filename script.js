@@ -15,20 +15,32 @@ const clearButton = document.querySelector("#clearButton");
 const eraserButton = document.querySelector("#eraserButton");
 const colorPicker = document.querySelector("#colorPicker");
 const backgroundPicker = document.querySelector("#backgroundPicker");
+const sizeSlider = document.querySelector("#sizeSlider");
+const sizeValue = document.querySelector("#sizeValue");
 
 clearButton.addEventListener("click", () => backgroundColorChange(backgroundColor));
 eraserButton.addEventListener("click", () => colorChange(backgroundColor));
 colorPicker.addEventListener("input", (e) => {colorChange(e.target.value)});
 backgroundPicker.addEventListener("input", (e) => {backgroundColorChange(e.target.value)});
+sizeSlider.addEventListener("mousemove", (e) => {changeSliderText(e.target.value)});
+sizeSlider.addEventListener("change", (e) => {gridSizeChange(e.target.value)});
+
 
 createGrid(DEFAULT_SIZE);
-const squares = document.querySelectorAll(".grid-box");
 
 function colorChange(newColor){
   drawingColor = newColor;
 }
 
+function changeSliderText(newValue){
+  sizeValue.textContent = `${newValue} x ${newValue}`;
+}
 
+function gridSizeChange(newSize){
+  size = newSize;
+  removeGrid();
+  createGrid(size);
+}
 
 function backgroundColorChange(newbackgroundColor){
   backgroundColor = newbackgroundColor;
@@ -36,9 +48,13 @@ function backgroundColorChange(newbackgroundColor){
 }
 
 function setGridColor(newbackgroundColor){
+  let squares = document.querySelectorAll(".grid-box");
   squares.forEach(square => {square.style.backgroundColor = newbackgroundColor});
 }
 
+function removeGrid(){
+  grid.innerHTML = '';
+}
 
 function createGrid(size) {
   grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -88,9 +104,7 @@ function gridSizeChange(newSize){
 function modeChange(newMode){
 
 }
-function removeGrid(){
-  grid.innerHTML = '';
-}
+
 
 
 

@@ -58,3 +58,31 @@ header a {
 .grid-box {
     background-color: rgb(255, 255, 255);
 }
+
+
+#sizeSlider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 12px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.8;
+    border:1px solid black;
+}
+
+#sizeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background: #000000;
+    cursor: pointer;
+}
+
+#sizeSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
