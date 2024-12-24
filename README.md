@@ -4,7 +4,7 @@
 Sketch Pad is a web-based drawing application that allows the user to create pixel art on a customizable grid. It includes features like drawing, erasing, dynamic grid resizing, and color customization for both the drawing tool and grid background.
 
 ## Live Demo
-[Sketch Pad Live Demo](https://github.com/LionelP1/Sketch-Pad)
+[Sketch Pad Live Demo](https://lionelp1.github.io/Sketch-Pad/)
 
 ## Features
 - **Drawing and Erasing:** Use a color picker for drawing or switch to eraser mode.
